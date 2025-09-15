@@ -69,6 +69,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
+@media (min-width: 2500px) {
+    .container {
+        max-width: 1400px;
+    }
+}
 
 .pic.desktop_pic {
     width: 100%;
