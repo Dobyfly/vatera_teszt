@@ -58,7 +58,7 @@ body {
     color: var(--text_dark);
     background-size: 100%;
     background-repeat: no-repeat;
-    line-height: 140%;
+    line-height: 142%;
     font-size: 0.9rem;
     padding-bottom: 100px;
     font-family: "Montserrat", serif;
@@ -321,8 +321,10 @@ display:inline-block; margin:0 !important;
         padding-bottom: calc(var(--gutter) / 2);
     }
 }
+@media (min-width: 1200px) {
 .icons {
-    padding:0 10%;
+    padding:0 100px;
+}
 }
 .icon-text h3 {
     text-align: center;
@@ -680,12 +682,12 @@ gap:calc(var(--gutter) / 4);
     text-align:center;
 }
 
-/* kártya layout finomhang */
+
 .steps .step{
   display:flex; flex-direction:column; align-items:center; gap:8px; text-align:center;
 }
 
-/* ikon mérete */
+
 .steps .step .step-icon{
   position:relative; display:inline-block; margin-bottom:8px;
 }
@@ -693,7 +695,7 @@ gap:calc(var(--gutter) / 4);
   width:130px; height:130px; object-fit:contain; display:block;
 }
 
-/* jobbra mutató nyíl – az ikonhoz rögzítve */
+
 .steps .step .step-icon::after{
 content: "";
     display: none;
@@ -711,7 +713,10 @@ content: "";
 @media (min-width:992px){
   .steps > [class*="col-"] .step .step-icon::after{ display:block; }
   .steps > [class*="col-"]:last-child .step .step-icon::after{ display:none; }
+
+
 }
+
 
 /* sm–md: 2 oszlop – sorvégeken (2., 4. elem) ne legyen nyíl */
 @media (min-width:576px) and (max-width:991.98px){
@@ -723,5 +728,18 @@ content: "";
 @media (max-width:575.98px){
   .steps .step .step-icon::after{ display:none; }
 }
-
+@media (max-width:992px){
+  .steps .step{
+  margin-bottom:calc(var(--gutter) / 2);
+  }
+}
 /* step/ */
+
+.panasz span {
+ display:block;
+ padding-bottom:5px;
+ padding-top:5px;
+
+ font-weight:bold;
+
+}
