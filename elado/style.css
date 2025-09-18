@@ -643,7 +643,7 @@ gap:calc(var(--gutter) / 4);
     gap:10px;
     flex: 1 1 18%;
   min-width: 120px; 
-  
+  border-right: solid 1px #ccc;
     padding-right:calc(var(--gutter) / 4);
 
 }
