@@ -725,7 +725,11 @@ content: "";
 .steps .step:last-child .step-icon::after{
 display:none;
 }
-
+@media (max-width: 992px) {
+.steps .step .step-icon::after{
+display:none;
+}
+}
 
 
 .five-cols {
